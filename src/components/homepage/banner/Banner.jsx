@@ -30,11 +30,11 @@ const Banner = () => {
 
                     <div className="flex items-center gap-4">
 
-                        <button className="px-6 py-3 rounded-full text-white font-semibold bg-gradient-to-r from-[#6C3BFF] to-[#A855F7] hover:opacity-90 transition">
+                        <button className="px-6 py-3 rounded-full text-white font-semibold bg-gradient-to-r from-[#6C3BFF] to-[#A855F7] hover:opacity-90 transition cursor-pointer">
                             Explore Products
                         </button>
 
-                        <button className="flex items-center gap-2 px-6 py-3 rounded-full border border-purple-500 text-purple-600 font-semibold hover:bg-purple-50 transition">
+                        <button className="flex items-center gap-2 px-6 py-3 rounded-full border border-purple-500 text-purple-600 font-semibold hover:bg-purple-50 transition cursor-pointer">
                             ▶ Watch Demo
                         </button>
 

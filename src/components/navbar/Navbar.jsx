@@ -39,7 +39,7 @@ const Navbar = () => {
 
                     <a className="text-lg font-medium cursor-pointer">Login</a>
 
-                    <button className="btn rounded-full text-white font-bold bg-gradient-to-b from-[#4F39F6] to-[#9514FA] px-6">
+                    <button className="btn rounded-full text-white font-bold bg-gradient-to-r from-[#4F39F6] to-[#9514FA] px-6">
                         Get Started
                     </button>
 
