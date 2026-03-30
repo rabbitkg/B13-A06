@@ -7,58 +7,62 @@ const AvaProducts = ({ products }) => {
 
             <div className='grid grid-cols-3 gap-8'>
                 {
-                products.map((product) => {
-                    console.log(product, "product");
-                    return <div className="card bg-base-100 shadow-xl rounded-2xl">
-                        <div className="card-body p-6">
+                    products.map((product) => {
+                        console.log(product, "product");
+                        return <div className="card bg-base-100 rounded-2xl border-3 border-gray-200 ">
+                            <div className="card-body p-3">
 
-                            {/* Badge */}
-                            <div className="flex justify-end">
-                                <span className="badge badge-sm bg-yellow-200 text-black">
-                                    {product.tagType}
-                                </span>
+                                <div className="flex justify-end">
+                                    <span
+                                        className={`badge badge-sm p-4 rounded-full ${product.tagType === "best seller"
+                                            ? "bg-[#FEF3C6] text-[#BB4D00]"
+                                            : product.tagType === "popular"
+                                                ? "bg-[#E1E7FF] text-[#4F39F6]"
+                                                : product.tagType === "new"
+                                                    ? "bg-[#DBFCE7] text-[#0A883E]"
+                                                    : ""
+                                            }`}
+                                    >
+                                        {product.tagType}
+                                    </span>
+                                </div>
+
+                                <div className="flex justify-start my-4">
+                                    <img className="h-12 w-12" src="/src/assets/operation.png" alt="icon" />
+                                </div>
+
+                                <div className="text-left">
+                                    <h2 className="text-2xl font-bold mb-4">{product.name}</h2>
+                                    <p className='text-[#627382] mb-4'>{product.description}</p>
+                                    <p className="text-xl font-bold">${product.price}<span className='text-[#627382] font-medium'>/Mo</span> </p>
+                                </div>
+
+                                <ul className="mt-4 space-y-2 text-sm text-[#627382]">
+                                    {product.features.map((feature, i) => (
+                                        <li key={i} className="flex items-center gap-2">
+                                            <svg
+                                                className="w-4 h-4 text-green-500"
+                                                fill="none"
+                                                stroke="currentColor"
+                                                viewBox="0 0 24 24"
+                                            >
+                                                <path strokeWidth="2" d="M5 13l4 4L19 7" />
+                                            </svg>
+                                            {feature}
+                                        </li>
+                                    ))}
+                                </ul>
+
+                                <div className="mt-4 flex justify-center">
+                                    <button className="btn w-full max-w-xs rounded-full text-white font-bold bg-gradient-to-r from-[#4F39F6] to-[#9514FA]">
+                                        Buy Now
+                                    </button>
+                                </div>
+
                             </div>
-
-                            {/* Icon */}
-                            <div className="flex justify-start my-4">
-                                <img className="h-12 w-12" src="/src/assets/operation.png" alt="icon" />
-                            </div>
-
-                            {/* Title + Price */}
-                            <div className="text-left">
-                                <h2 className="text-2xl font-bold">{product.name}</h2>
-                                <p className='text-[#627382]'>{product.description}</p>
-                                <p className="text-xl mt-1">${product.price}/mo</p>
-                            </div>
-
-                            {/* Features */}
-                            <ul className="mt-6 space-y-2 text-sm text-[#627382]">
-                                {product.features.map((feature, i) => (
-                                    <li key={i} className="flex items-center gap-2">
-                                        <svg
-                                            className="w-4 h-4 text-green-500"
-                                            fill="none"
-                                            stroke="currentColor"
-                                            viewBox="0 0 24 24"
-                                        >
-                                            <path strokeWidth="2" d="M5 13l4 4L19 7" />
-                                        </svg>
-                                        {feature}
-                                    </li>
-                                ))}
-                            </ul>
-
-                            {/* Button */}
-                            <div className="mt-6">
-                                <button className="btn rounded-full text-white font-bold bg-gradient-to-r from-[#4F39F6] to-[#9514FA] px-33">
-                                    Buy Now
-                                </button>
-                            </div>
-
                         </div>
-                    </div>
-                })
-            }
+                    })
+                }
             </div>
 
 
