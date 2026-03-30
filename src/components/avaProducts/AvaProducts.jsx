@@ -1,7 +1,7 @@
 import React from 'react';
 import Card from '../ui/Card';
 
-const AvaProducts = ({ products }) => {
+const AvaProducts = ({ products, setCount, count }) => {
     console.log(products, "products");
     return (
         <div>
@@ -10,7 +10,7 @@ const AvaProducts = ({ products }) => {
                 {
                     products.map((product) => {
                         console.log(product, "product");
-                        return <Card product={product}/>;
+                        return <Card product={product} setCount={setCount} count={count}/>;
                     })
                 }
             </div>

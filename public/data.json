@@ -13,7 +13,8 @@
       "Export to PDF",
       "Custom sections"
     ],
-    "productImg": "/src/assets/social-media.png"
+    "productImg": "/src/assets/social-media.png",
+    "count": 1
   },
   {
     "id": 2,
@@ -29,7 +30,8 @@
       "Quick customization",
       "Download as PDF"
     ],
-    "productImg": "/src/assets/writing_2327400 1.png"
+    "productImg": "/src/assets/writing_2327400 1.png",
+    "count": 1
   },
   {
     "id": 3,
@@ -45,7 +47,8 @@
       "Free hosting",
       "Custom domain support"
     ],
-    "productImg": "/src/assets/portfolio.png"
+    "productImg": "/src/assets/portfolio.png",
+    "count": 1
   },
   {
     "id": 4,
@@ -61,7 +64,8 @@
       "Video practice",
       "Feedback reports"
     ],
-    "productImg": "/src/assets/design-tool.png"
+    "productImg": "/src/assets/design-tool.png",
+    "count": 1
   },
   {
     "id": 5,
@@ -77,7 +81,8 @@
       "Headline generator",
       "SEO tips"
     ],
-    "productImg": "/src/assets/shopping-cart.png"
+    "productImg": "/src/assets/shopping-cart.png",
+    "count": 1
   },
   {
     "id": 6,
@@ -93,6 +98,7 @@
       "Reminder alerts",
       "Analytics dashboard"
     ],
-    "productImg": "/src/assets/operation.png"
+    "productImg": "/src/assets/operation.png",
+    "count": 1
   }
 ]

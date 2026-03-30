@@ -1,4 +1,4 @@
-import { Suspense } from 'react'
+import { Suspense, useState } from 'react'
 import './App.css'
 import Banner from './components/homepage/banner/Banner'
 import Products from './components/homepage/products/Products'
@@ -12,15 +12,16 @@ const fetchProducts = async () => {
 
 function App() {
   const ProductsPromise = fetchProducts();
+  const [count, setCount] = useState(0)
   return (
     <>
 
-      <Navbar />
+      <Navbar count={count}/>
       <Banner />
       <RatingSection />
       <Suspense fallback={<span className="loading loading-dots loading-xl"></span>
       }>
-        <Products ProductsPromise={ProductsPromise} />
+        <Products ProductsPromise={ProductsPromise} setCount={setCount} count={count}/>
       </Suspense>
     </>
   )
