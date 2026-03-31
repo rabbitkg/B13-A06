@@ -33,7 +33,18 @@ const Products = ({ ProductsPromise, setCount, count }) => {
 
             </div>
 
-            {selectedType === "available" ? <AvaProducts products={products} setCount={setCount} count={count} setSelectedProducts={setSelectedProducts} selectedProducts={selectedProducts} /> : <SelectedProduct selectedProducts={selectedProducts} />}
+            {selectedType === "available" ? <AvaProducts 
+            products={products} 
+            setCount={setCount} 
+            count={count} 
+            setSelectedProducts={setSelectedProducts} 
+            selectedProducts={selectedProducts} /> : 
+
+            <SelectedProduct 
+            selectedProducts={selectedProducts} 
+            setSelectedProducts={setSelectedProducts} 
+            setCount={setCount} 
+            count={count}/>}
         </div>
     );
 };

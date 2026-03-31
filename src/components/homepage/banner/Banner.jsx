@@ -11,7 +11,7 @@ const Banner = () => {
 
                     <div className="inline-flex items-center gap-2 bg-purple-100 text-purple-600 px-4 py-2 rounded-full text-sm font-medium">
 
-                        <img src="/src/assets/Group 5.png" alt="" />
+                        <img src="https://i.ibb.co.com/5WVYGkMJ/Group-5.png" alt="icon" />
 
                         New: AI-Powered Tools Available
                     </div>

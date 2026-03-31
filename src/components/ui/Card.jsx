@@ -1,13 +1,14 @@
 import React, { useState } from 'react';
+import { FaCheck } from 'react-icons/fa';
 
-const Card = ({ product, setCount, selectedProducts, setSelectedProducts}) => {
+const Card = ({ product, setCount, selectedProducts, setSelectedProducts }) => {
     const [isSelected, setIsSelected] = useState(false);
 
     console.log(product.count)
     const handleChooseProduct = () => {
         if (isSelected) return;
 
-        setIsSelected(true); 
+        setIsSelected(true);
         Number(product.count)
         setCount(prev => prev + Number(product.count));
 
@@ -35,9 +36,14 @@ const Card = ({ product, setCount, selectedProducts, setSelectedProducts}) => {
                     </span>
                 </div>
 
-                <div className="flex justify-start my-4">
-                    <img className="h-12 w-12" src={product.productImg
-                    } alt="product.productImg" />
+                <div className="flex justify-start">
+                    <div className="border border-[#62738241] rounded-full p-3.5 bg-white">
+                        <img
+                            className="h-9 w-9 object-contain"
+                            src={product.productImg}
+                            alt={product.name}
+                        />
+                    </div>
                 </div>
 
                 <div className="text-left">
@@ -67,7 +73,14 @@ const Card = ({ product, setCount, selectedProducts, setSelectedProducts}) => {
                         onClick={handleChooseProduct}
                         className={`btn w-full max-w-xs rounded-full text-white font-bold ${isSelected ? "bg-green-600" : "bg-gradient-to-r from-[#4F39F6] to-[#9514FA]"}`}
                     >
-                        {isSelected ? "Added to Cart!" : "Buy Now"}
+                        {isSelected ? (
+                            <>
+                                <FaCheck className="text-lg" /> 
+                                Added to Cart!
+                            </>
+                        ) : (
+                            "Buy Now"
+                        )}
                     </button>
                 </div>
 
