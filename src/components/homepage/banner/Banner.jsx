@@ -44,7 +44,7 @@ const Banner = () => {
 
                 <div className="flex justify-center">
                     <img
-                        src="/src/assets/banner.png"
+                        src="https://i.ibb.co.com/fd99KCm5/banner.png"
                         alt="banner"
                         className="w-full max-w-md lg:max-w-lg rounded-2xl object-cover"
                     />
