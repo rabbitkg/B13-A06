@@ -1,6 +1,6 @@
 <div align="center">
 
-  <img src="https://i.ibb.co.com/fd99KCm5/banner.png" alt="DigiTools Banner" width="800"/>
+  <img src="https://i.ibb.co.com/zVbHKR7B/Screenshot-2026-04-01-043712.jpg" alt="DigiTools Banner" width="800"/>
 
   <h1>DigiTools Platform</h1>
 
