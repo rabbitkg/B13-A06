@@ -1,16 +1,102 @@
-# React + Vite
+<div align="center">
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+  <img src="https://i.ibb.co.com/fd99KCm5/banner.png" alt="DigiTools Banner" width="800"/>
 
-Currently, two official plugins are available:
+  <h1>DigiTools Platform</h1>
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+  <p>
+    <strong>Supercharge Your Digital Workflow</strong><br>
+    Access premium AI tools, design assets, templates, and productivity software — all in one place.
+  </p>
 
-## React Compiler
+  <a href="https://github.com/yourusername/digitools-platform/stargazers">
+    <img src="https://img.shields.io/github/stars/yourusername/digitools-platform?style=for-the-badge&logo=github&color=6C3BFF" alt="Stars">
+  </a>
+  <a href="https://github.com/yourusername/digitools-platform/issues">
+    <img src="https://img.shields.io/github/issues/yourusername/digitools-platform?style=for-the-badge&logo=github&color=9514FA" alt="Issues">
+  </a>
+  <a href="https://github.com/yourusername/digitools-platform/blob/main/LICENSE">
+    <img src="https://img.shields.io/github/license/yourusername/digitools-platform?style=for-the-badge&color=4F39F6" alt="License">
+  </a>
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+  <br><br>
 
-## Expanding the ESLint configuration
+  [![Live Demo](https://img.shields.io/badge/Live_Demo-View_Website-6C3BFF?style=for-the-badge&logo=vercel)](https://digitools-platform.vercel.app)
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+</div>
+
+---
+
+## ✨ About DigiTools
+
+**DigiTools Platform** is a modern digital marketplace where creators, freelancers, and businesses can discover and access high-quality premium tools — from AI-powered utilities to design resources and productivity software.
+
+Built with a clean, modern UI and smooth user experience, DigiTools makes it effortless to browse, select, and manage your favorite digital products.
+
+### 🚀 Live Demo
+[View Live Website](https://digitools-platform.vercel.app)
+
+---
+
+## 🛠️ Technologies Used
+
+- **Frontend**: React.js (v19), Tailwind CSS
+- **Styling**: Custom CSS + DaisyUI components
+- **Notifications**: React-Toastify
+- **Icons**: Lucide React
+- **State Management**: React `useState` + `use()`
+- **Deployment Ready**: Optimized for Vercel / Netlify
+
+---
+
+## ✨ Key Features
+
+### 1. **Premium Product Showcase**
+   - Beautiful product cards with rich information
+   - Categorized products (Best Seller, Popular, New)
+   - Smooth hover animations and modern design
+
+### 2. **Smart Shopping Cart**
+   - Add/remove products with real-time updates
+   - Dynamic total price calculation
+   - Toast notifications for better UX
+
+### 3. **3-Step Getting Started Guide**
+   - Clear onboarding flow for new users
+   - Visual step-by-step process
+   - Professional and intuitive layout
+
+### Bonus Features:
+- Responsive design (Mobile + Desktop)
+- Dark/Light theme ready structure
+- Smooth transitions and micro-interactions
+- Clean, modern, and professional UI
+
+---
+
+## 📸 Screenshots
+
+![DigiTools Banner](https://i.ibb.co.com/fd99KCm5/banner.png)
+![Products Grid](https://i.ibb.co.com/0pnbV1f7/user.png) <!-- Replace with actual screenshots -->
+
+---
+
+## 🧩 Future Enhancements
+
+- User authentication & profiles
+- Payment integration (Stripe)
+- Wishlist functionality
+- Advanced filtering & search
+- AI tool recommendations
+
+---
+
+## 📄 License
+
+This project is open source and available under the **[MIT License](LICENSE)**.
+
+---
+
+**Made with ❤️ for digital creators**
+
+</div>
