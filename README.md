@@ -9,20 +9,6 @@
     Access premium AI tools, design assets, templates, and productivity software — all in one place.
   </p>
 
-  <a href="https://github.com/yourusername/digitools-platform/stargazers">
-    <img src="https://img.shields.io/github/stars/yourusername/digitools-platform?style=for-the-badge&logo=github&color=6C3BFF" alt="Stars">
-  </a>
-  <a href="https://github.com/yourusername/digitools-platform/issues">
-    <img src="https://img.shields.io/github/issues/yourusername/digitools-platform?style=for-the-badge&logo=github&color=9514FA" alt="Issues">
-  </a>
-  <a href="https://github.com/yourusername/digitools-platform/blob/main/LICENSE">
-    <img src="https://img.shields.io/github/license/yourusername/digitools-platform?style=for-the-badge&color=4F39F6" alt="License">
-  </a>
-
-  <br><br>
-
-  [![Live Demo](https://img.shields.io/badge/Live_Demo-View_Website-6C3BFF?style=for-the-badge&logo=vercel)](https://digitools-platform.vercel.app)
-
 </div>
 
 ---
@@ -34,7 +20,7 @@
 Built with a clean, modern UI and smooth user experience, DigiTools makes it effortless to browse, select, and manage your favorite digital products.
 
 ### 🚀 Live Demo
-[View Live Website](https://digitools-platform.vercel.app)
+[View Live Website]()
 
 ---
 
@@ -76,8 +62,8 @@ Built with a clean, modern UI and smooth user experience, DigiTools makes it eff
 
 ## 📸 Screenshots
 
-![DigiTools Banner](https://i.ibb.co.com/fd99KCm5/banner.png)
-![Products Grid](https://i.ibb.co.com/0pnbV1f7/user.png) <!-- Replace with actual screenshots -->
+![DigiTools Banner](https://i.ibb.co.com/N25sWsvT/Screenshot-2026-04-01-044916.jpg)
+![Products Grid](https://i.ibb.co.com/Xx3RbZNq/Screenshot-2026-04-01-044757.jpg) <!-- Replace with actual screenshots -->
 
 ---
 
@@ -88,12 +74,6 @@ Built with a clean, modern UI and smooth user experience, DigiTools makes it eff
 - Wishlist functionality
 - Advanced filtering & search
 - AI tool recommendations
-
----
-
-## 📄 License
-
-This project is open source and available under the **[MIT License](LICENSE)**.
 
 ---
 
