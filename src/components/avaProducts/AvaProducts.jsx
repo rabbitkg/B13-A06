@@ -1,16 +1,16 @@
 import React from 'react';
 import Card from '../ui/Card';
 
-const AvaProducts = ({ products, setCount, count }) => {
+const AvaProducts = ({ products, setCount, count, selectedProducts, setSelectedProducts }) => {
     console.log(products, "products");
     return (
         <div>
 
             <div className='grid grid-cols-1 md:grid-cols-3 gap-8'>
                 {
-                    products.map((product) => {
+                    products.map((product, ind) => {
                         console.log(product, "product");
-                        return <Card product={product} setCount={setCount} count={count}/>;
+                        return <Card key={ind} product={product} setCount={setCount} count={count} selectedProducts={selectedProducts} setSelectedProducts={setSelectedProducts}/>;
                     })
                 }
             </div>

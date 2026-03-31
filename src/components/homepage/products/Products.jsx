@@ -8,6 +8,7 @@ const Products = ({ ProductsPromise, setCount, count }) => {
     console.log(products);
     const [selectedType, setSelectedType] = useState("available");
     console.log(selectedType, "selectedType");
+    const [selectedProducts, setSelectedProducts] = useState([]);
 
     return (
         <div className='max-w-[1200px] mx-auto mt-28 text-center'>
@@ -19,20 +20,20 @@ const Products = ({ ProductsPromise, setCount, count }) => {
             <div className="flex items-center justify-center border border-gray-200 rounded-full p-1 w-fit mx-auto mb-11">
 
                 <button
-                onClick={() => setSelectedType("available")}
-                className={`${selectedType === "available" ? "px-8 py-5 rounded-full text-white font-semibold bg-gradient-to-r from-[#4F39F6] to-[#9514FA] shadow-md cursor-pointer" : "px-10 py-5 rounded-full text-[#25065D] font-semibold cursor-pointer"} `}>
+                    onClick={() => setSelectedType("available")}
+                    className={`${selectedType === "available" ? "px-8 py-5 rounded-full text-white font-semibold bg-gradient-to-r from-[#4F39F6] to-[#9514FA] shadow-md cursor-pointer" : "px-10 py-5 rounded-full text-[#25065D] font-semibold cursor-pointer"} `}>
                     Products
                 </button>
 
                 <button
-                onClick={() => setSelectedType("selected")}
-                className={`${selectedType === "selected" ? "px-8 py-5 rounded-full text-white font-semibold bg-gradient-to-r from-[#4F39F6] to-[#9514FA] shadow-md cursor-pointer" : "px-10 py-5 rounded-full text-[#25065D] font-semibold cursor-pointer"} `}>
-                    Cart (0)
+                    onClick={() => setSelectedType("selected")}
+                    className={`${selectedType === "selected" ? "px-8 py-5 rounded-full text-white font-semibold bg-gradient-to-r from-[#4F39F6] to-[#9514FA] shadow-md cursor-pointer" : "px-10 py-5 rounded-full text-[#25065D] font-semibold cursor-pointer"} `}>
+                    Cart ({selectedProducts.length})
                 </button>
 
             </div>
 
-            {selectedType === "available" ?<AvaProducts products={products} setCount={setCount} count={count}/> : <SelectedProduct/>}
+            {selectedType === "available" ? <AvaProducts products={products} setCount={setCount} count={count} setSelectedProducts={setSelectedProducts} selectedProducts={selectedProducts} /> : <SelectedProduct selectedProducts={selectedProducts} />}
         </div>
     );
 };

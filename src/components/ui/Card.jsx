@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 
-const Card = ({ product, setCount, }) => {
+const Card = ({ product, setCount, selectedProducts, setSelectedProducts}) => {
     const [isSelected, setIsSelected] = useState(false);
 
     console.log(product.count)
@@ -10,6 +10,10 @@ const Card = ({ product, setCount, }) => {
         setIsSelected(true); 
         Number(product.count)
         setCount(prev => prev + Number(product.count));
+
+        alert(`${product.name} has been Purchased.`);
+        setIsSelected(true);
+        setSelectedProducts([...selectedProducts, product])
     }
 
     return (
@@ -33,7 +37,7 @@ const Card = ({ product, setCount, }) => {
 
                 <div className="flex justify-start my-4">
                     <img className="h-12 w-12" src={product.productImg
-                    } alt="icon" />
+                    } alt="product.productImg" />
                 </div>
 
                 <div className="text-left">
