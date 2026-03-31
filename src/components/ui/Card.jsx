@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { FaCheck } from 'react-icons/fa';
+import { toast } from 'react-toastify';
 
 const Card = ({ product, setCount, selectedProducts, setSelectedProducts }) => {
     const [isSelected, setIsSelected] = useState(false);
@@ -12,7 +13,7 @@ const Card = ({ product, setCount, selectedProducts, setSelectedProducts }) => {
         Number(product.count)
         setCount(prev => prev + Number(product.count));
 
-        alert(`${product.name} has been Purchased.`);
+        toast.success(`${product.name} has been Purchased.`)
         setIsSelected(true);
         setSelectedProducts([...selectedProducts, product])
     }
@@ -68,7 +69,7 @@ const Card = ({ product, setCount, selectedProducts, setSelectedProducts }) => {
                     ))}
                 </ul>
 
-                <div className="mt-4 flex justify-center">
+                <div className="mt-4 flex justify-center mb-3.5">
                     <button
                         onClick={handleChooseProduct}
                         className={`btn w-full max-w-xs rounded-full text-white font-bold ${isSelected ? "bg-green-600" : "bg-gradient-to-r from-[#4F39F6] to-[#9514FA]"}`}

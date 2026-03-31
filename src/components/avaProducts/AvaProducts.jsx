@@ -6,7 +6,7 @@ const AvaProducts = ({ products, setCount, count, selectedProducts, setSelectedP
     return (
         <div>
 
-            <div className='grid grid-cols-1 md:grid-cols-3 gap-8'>
+            <div className='grid grid-cols-1 md:grid-cols-3 gap-8 mb-28'>
                 {
                     products.map((product, ind) => {
                         console.log(product, "product");

@@ -4,6 +4,7 @@ import Banner from './components/homepage/banner/Banner'
 import Products from './components/homepage/products/Products'
 import RatingSection from './components/homepage/ratingSection/RatingSection'
 import Navbar from './components/navbar/Navbar'
+import { ToastContainer } from 'react-toastify'
 
 const fetchProducts = async () => {
   const res = await fetch("/data.json");
@@ -23,6 +24,8 @@ function App() {
       }>
         <Products ProductsPromise={ProductsPromise} setCount={setCount} count={count}/>
       </Suspense>
+
+      <ToastContainer />
     </>
   )
 }
