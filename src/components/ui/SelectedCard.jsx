@@ -20,20 +20,9 @@ const SelectedCard = ({ product, handleDeleteSelectedProduct }) => {
 
             </div>
 
-            <div>
-                <div className='flex justify-between mt-5 mb-3'>
-                    <div className='text-[#627382] text-xl'>
-                        Total
-                    </div>
-                    <div className='text-2xl font-bold'>
-                        $0
-                    </div>
-                </div>
-                <button className='btn w-full max-w-6xl h-14 rounded-full text-white font-bold bg-gradient-to-r from-[#4F39F6] to-[#9514FA]'>
-                    Proceed To Checkout
-                </button>
-            </div>
+            
         </div>
+        
     );
 };
 

@@ -13,7 +13,7 @@ const Card = ({ product, setCount, selectedProducts, setSelectedProducts }) => {
         Number(product.count)
         setCount(prev => prev + Number(product.count));
 
-        toast.success(`${product.name} has been Purchased.`)
+        toast.success(`${product.name} is Added to Cart.`)
         setIsSelected(true);
         setSelectedProducts([...selectedProducts, product])
     }
