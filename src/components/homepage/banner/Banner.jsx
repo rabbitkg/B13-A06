@@ -4,7 +4,7 @@ const Banner = () => {
     return (
         <div className="max-w-[1200px] mx-auto w-full px-4 mt-20">
 
-            <div className="grid lg:grid-cols-2 gap-12 items-center">
+            <div className="grid sm:grid-cols-2 gap-12 items-center">
 
                 <div className="space-y-6">
 
