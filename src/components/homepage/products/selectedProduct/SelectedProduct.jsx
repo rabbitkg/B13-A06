@@ -80,7 +80,7 @@ const SelectedProduct = ({
                                 Total
                             </div>
                             <div className="text-2xl font-bold">
-                                ${totalPrice}
+                                ${totalPrice.toFixed(2)}
                             </div>
                         </div>
 

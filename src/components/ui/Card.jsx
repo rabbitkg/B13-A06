@@ -1,22 +1,29 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { FaCheck } from 'react-icons/fa';
 import { toast } from 'react-toastify';
 
-const Card = ({ product, setCount, selectedProducts, setSelectedProducts }) => {
-    const [isSelected, setIsSelected] = useState(false);
+const Card = ({ 
+    product, 
+    setCount, 
+    selectedProducts, 
+    setSelectedProducts 
+}) => {
 
-    console.log(product.count)
+    const isAlreadyAdded = selectedProducts.some(item => item.name === product.name);
+
     const handleChooseProduct = () => {
-        if (isSelected) return;
+        if (isAlreadyAdded) {
+            toast.info(`${product.name} is already in your cart!`);
+            return;
+        }
 
-        setIsSelected(true);
-        Number(product.count)
-        setCount(prev => prev + Number(product.count));
+        const productCount = Number(product.count) || 1;
 
-        toast.success(`${product.name} is Added to Cart.`)
-        setIsSelected(true);
-        setSelectedProducts([...selectedProducts, product])
-    }
+        setCount(prev => prev + productCount);
+        setSelectedProducts(prev => [...prev, product]);
+
+        toast.success(`${product.name} is Added to Cart.`);
+    };
 
     return (
         <div className="card bg-base-100 rounded-2xl border-3 border-gray-200 ">
@@ -50,7 +57,10 @@ const Card = ({ product, setCount, selectedProducts, setSelectedProducts }) => {
                 <div className="text-left">
                     <h2 className="text-2xl font-bold mb-4">{product.name}</h2>
                     <p className='text-[#627382] mb-4'>{product.description}</p>
-                    <p className="text-xl font-bold">${product.price}<span className='text-[#627382] font-medium'>/{product.period}</span> </p>
+                    <p className="text-xl font-bold">
+                        ${product.price}
+                        <span className='text-[#627382] font-medium'>/{product.period}</span>
+                    </p>
                 </div>
 
                 <ul className="mt-4 space-y-2 text-sm text-[#627382]">
@@ -72,9 +82,14 @@ const Card = ({ product, setCount, selectedProducts, setSelectedProducts }) => {
                 <div className="mt-4 flex justify-center mb-3.5">
                     <button
                         onClick={handleChooseProduct}
-                        className={`btn w-full max-w-xs rounded-full text-white font-bold ${isSelected ? "bg-green-600" : "bg-gradient-to-r from-[#4F39F6] to-[#9514FA]"}`}
+                        disabled={isAlreadyAdded}
+                        className={`btn w-full max-w-xs rounded-full text-white font-bold 
+                            ${isAlreadyAdded 
+                                ? "bg-green-600 cursor-default" 
+                                : "bg-gradient-to-r from-[#4F39F6] to-[#9514FA] hover:brightness-110"
+                            }`}
                     >
-                        {isSelected ? (
+                        {isAlreadyAdded ? (
                             <>
                                 <FaCheck className="text-lg" /> 
                                 Added to Cart!
@@ -87,7 +102,6 @@ const Card = ({ product, setCount, selectedProducts, setSelectedProducts }) => {
 
             </div>
         </div>
-        
     );
 };
 
