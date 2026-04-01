@@ -176,7 +176,7 @@ const GetStarted = () => {
                         <button className="px-12 py-4 bg-white font-bold rounded-full hover:bg-gray-100 transition cursor-pointer">
                             <span className='bg-gradient-to-br from-[#4F39F6] to-[#9514FA] bg-clip-text text-transparent font-semibold'>Explore Products</span>
                         </button>
-                        <button className="px-12 py-4 border border-white/70 rounded-full hover:bg-white/10 transition cursor-po">
+                        <button className="px-12 py-4 border border-white/70 rounded-full hover:bg-white/10 transition cursor-pointer">
                             View Pricing
                         </button>
                     </div>

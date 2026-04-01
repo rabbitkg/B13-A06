@@ -50,7 +50,7 @@ const Card = ({ product, setCount, selectedProducts, setSelectedProducts }) => {
                 <div className="text-left">
                     <h2 className="text-2xl font-bold mb-4">{product.name}</h2>
                     <p className='text-[#627382] mb-4'>{product.description}</p>
-                    <p className="text-xl font-bold">${product.price}<span className='text-[#627382] font-medium'>/Mo</span> </p>
+                    <p className="text-xl font-bold">${product.price}<span className='text-[#627382] font-medium'>/{product.period}</span> </p>
                 </div>
 
                 <ul className="mt-4 space-y-2 text-sm text-[#627382]">
@@ -87,6 +87,7 @@ const Card = ({ product, setCount, selectedProducts, setSelectedProducts }) => {
 
             </div>
         </div>
+        
     );
 };
 

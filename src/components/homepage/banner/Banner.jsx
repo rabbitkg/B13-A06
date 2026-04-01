@@ -17,7 +17,7 @@ const Banner = () => {
                     </div>
 
                     <h1 className="text-4xl lg:text-6xl font-extrabold text-gray-800 leading-tight">
-                        Supercharge Your <br /> Digital Workflow
+                        Supercharge Your <br /> <span className='bg-gradient-to-r from-[#6C3BFF] to-[#A855F7] bg-clip-text text-transparent'>Digital Workflow</span>
                     </h1>
 
                     <p className="text-gray-500 text-lg leading-relaxed max-w-xl">

@@ -30,7 +30,11 @@ function App() {
       <Footer/>
 
 
-      <ToastContainer />
+      <ToastContainer 
+        position="top-right"
+        // toastStyle={{ marginTop: "70px" }}
+        className="mt-18"
+      />
     </>
   )
 }
