@@ -21,7 +21,7 @@ const SelectedProduct = ({
         const removeCount = Number(product.count || 1);
         setCount(prev => Math.max(0, Number(prev || 0) - removeCount));
 
-        // Show remove toast
+
         toast.error(`${product.name} removed from cart`, {
             duration: 3000,
             position: 'top-right',
@@ -29,7 +29,7 @@ const SelectedProduct = ({
 
     };
 
-    // Calculate total price
+
     const totalPrice = selectedProducts.reduce((sum, product) => {
         return sum + Number(product.price || 0);
     }, 0);
@@ -42,7 +42,7 @@ const SelectedProduct = ({
             position: 'top-right',
         });
 
-        // Clear cart and reset count
+
         setSelectedProducts([]);
         setCount(0);
     };
@@ -50,12 +50,12 @@ const SelectedProduct = ({
     return (
         <div className="space-y-5 border-3 border-[#62738241] rounded-2xl p-6 mb-28">
 
-            {/* Title */}
+
             <h3 className="font-bold text-3xl text-left">
                 Your Cart
             </h3>
 
-            {/* Empty State or Cart Items */}
+
             {selectedProducts.length === 0 ? (
                 <div className="h-[350px] flex items-center justify-center flex-col gap-4">
                     <FiShoppingCart size={100} className="text-[#62738273]" />
@@ -73,7 +73,7 @@ const SelectedProduct = ({
                         />
                     ))}
 
-                    {/* Total & Checkout Button - Only show when cart has items */}
+
                     <div className="mt-8 pt-6 border-t border-[#62738241]">
                         <div className="flex justify-between mb-6">
                             <div className="text-[#627382] text-xl">
