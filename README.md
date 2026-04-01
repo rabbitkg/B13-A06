@@ -79,4 +79,10 @@ Built with a clean, modern UI and smooth user experience, DigiTools makes it eff
 
 **Made with ❤️ for digital creators**
 
+---
+
+## 👨‍💻 Author  
+**Md. Fazle Rabbi**  
+📧 rabbitkgbd@gmail.com
+
 </div>
